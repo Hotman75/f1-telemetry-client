@@ -12,6 +12,7 @@
     "url": "https://github.com/racehub-io/f1-telemetry-client.git"
   },
   "dependencies": {
+    "@racehub-io/f1-telemetry-client": "^0.2.12",
     "binary-parser": "^2.2.1",
     "struct": "^0.0.12"
   },
