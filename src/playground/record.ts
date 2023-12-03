@@ -33,8 +33,8 @@ client.on('raw', ({packetData, packetID, message}) => {
       (key, value) => (typeof value === 'bigint' ? value.toString() : value)
     ) + '\n';
 
-  fs.writeFileSync(`./recordings/${filename}-${packetID}.json`, data);
-  fs.writeFileSync(`./recordings/${filename}-all.json`, data);
+  fs.writeFileSync(`./recordings/${packetID}.json`, data);
+  fs.writeFileSync('./recordings/all.json', data);
 });
 
 client.start();
